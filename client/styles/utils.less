@@ -1,0 +1,51 @@
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.container {
+    margin: auto;
+    max-width: @container_max_width;
+}
+
+.fullscreen {
+    position: absolute;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+}
+
+.fullscreen-fixed {
+    .fullscreen;
+    position: fixed;
+}
+
+.full-page-loader {
+    .fullscreen;
+    margin-top: 5em;
+    .material-icons {
+        font-size: 50px;
+        animation: spin 1s linear infinite;
+    }
+}
+
+.form-field {
+    margin: 1em 0;
+}
+
+.transition-all {
+    transition: all 0.3s;
+}
+
+.page-title {
+    margin: 1em;
+    font-size: 2em;
+}

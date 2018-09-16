@@ -1,0 +1,22 @@
+.popup {
+    .fullscreen-fixed;
+    z-index: 10;
+    opacity:0;
+    animation: fadeIn 0.5s forwards;
+
+    .popup-body {
+        background-color: @background-color;
+        margin: 5em auto;
+        padding: 1em 2em;
+        max-width: 700px;
+        max-height: 400px;
+        overflow: auto;
+        border-radius: 5px;
+    }
+
+    .backdrop {
+        .fullscreen;
+        z-index: -1;
+        background-color: rgba(0,0,0,0.5);
+    }
+}
